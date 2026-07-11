@@ -1,0 +1,28 @@
+:root {
+  --font-heading: "Georgia", "Times New Roman", serif;
+  --font-body: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  --color-primary: #0b3c91;
+  --color-primary-strong: #082d6a;
+  --color-accent: #f6be42;
+  --color-surface: rgba(255, 255, 255, 0.86);
+  --color-surface-strong: #ffffff;
+  --color-text: #162033;
+  --color-text-muted: #546179;
+  --color-border: rgba(11, 60, 145, 0.12);
+  --color-shadow: rgba(12, 26, 75, 0.12);
+
+  --container-width: 1120px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+}

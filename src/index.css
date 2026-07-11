@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top, rgba(246, 190, 66, 0.16), transparent 30%),
+    linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(100% - 2rem, var(--container-width));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(18px);
+  background: rgba(248, 250, 252, 0.82);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: 1rem 0;
+}
+
+.brand-mark {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.brand-mark__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary-strong);
+}
+
+.brand-mark__subtitle {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.site-nav {
+  display: none;
+  gap: var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.site-nav a:hover {
+  color: var(--color-primary);
+}
+
+main {
+  display: block;
+}
+
+.hero-section {
+  padding: var(--space-7) 0;
+}
+
+.hero-section__grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.hero-section__content,
+.hero-card,
+.info-card {
+  background: var(--color-surface);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 20px 50px var(--color-shadow);
+}
+
+.hero-section__content {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-3);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.hero-section h1,
+.section-heading h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  color: var(--color-primary-strong);
+}
+
+.hero-section h1 {
+  font-size: clamp(2.3rem, 6vw, 4.75rem);
+}
+
+.hero-copy,
+.info-card p,
+.site-footer p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.85rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.button--primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-strong));
+}
+
+.button--secondary {
+  color: var(--color-primary-strong);
+  background: rgba(11, 60, 145, 0.08);
+  border: 1px solid rgba(11, 60, 145, 0.14);
+}
+
+.hero-card {
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+}
+
+.hero-card__label {
+  margin: 0 0 var(--space-4);
+  font-weight: 700;
+  color: var(--color-primary-strong);
+}
+
+.hero-card__list {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text);
+}
+
+.info-grid-section {
+  padding: 0 0 var(--space-8);
+}
+
+.section-heading {
+  max-width: 40rem;
+  margin-bottom: var(--space-6);
+}
+
+.info-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.info-card {
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-3);
+  color: var(--color-primary-strong);
+}
+
+.site-footer {
+  padding: var(--space-6) 0 var(--space-7);
+}
+
+.site-footer__inner {
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .hero-section {
+    padding: var(--space-8) 0;
+  }
+
+  .hero-section__grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(320px, 0.8fr);
+    align-items: center;
+  }
+}
