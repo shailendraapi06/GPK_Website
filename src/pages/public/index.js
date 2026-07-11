@@ -1,0 +1,10 @@
+export { AboutPage } from "./AboutPage";
+export { AcademicsPage } from "./AcademicsPage";
+export { AdmissionsPage } from "./AdmissionsPage";
+export { ContactPage } from "./ContactPage";
+export { DepartmentsPage } from "./DepartmentsPage";
+export { FacultyPage } from "./FacultyPage";
+export { GalleryPage } from "./GalleryPage";
+export { HomePage } from "./HomePage";
+export { PlacementPage } from "./PlacementPage";
+export { StudentCornerPage } from "./StudentCornerPage";
