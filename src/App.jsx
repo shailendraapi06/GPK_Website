@@ -1,17 +1,7 @@
-import { Footer } from "./components/layout/Footer";
-import { Header } from "./components/layout/Header";
-import { HomePage } from "./pages/HomePage";
+import { AppRouter } from "./router/AppRouter";
 
 function App() {
-  return (
-    <div className="app-shell">
-      <Header />
-      <main>
-        <HomePage />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <AppRouter />;
 }
 
 export default App;
