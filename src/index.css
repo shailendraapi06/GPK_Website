@@ -414,6 +414,30 @@ h6 {
   border-top: 1px solid var(--color-border);
 }
 
+.home-section {
+  padding-block: var(--space-5);
+}
+
+.home-section__inner {
+  padding: var(--space-6);
+}
+
+.home-section__header {
+  margin-bottom: var(--space-5);
+}
+
+.home-section__title {
+  font-size: var(--font-size-2xl);
+}
+
+.home-section__placeholder {
+  min-height: 8rem;
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(22, 61, 122, 0.03), rgba(212, 167, 44, 0.04));
+}
+
 .page-container {
   width: min(100%, var(--container-width));
   margin-inline: auto;
@@ -635,6 +659,14 @@ h6 {
   .footer__grid {
     grid-template-columns: 1.5fr repeat(2, minmax(0, 1fr));
     align-items: start;
+  }
+
+  .home-section {
+    padding-block: var(--space-6);
+  }
+
+  .home-section__inner {
+    padding: var(--space-7);
   }
 }
 
