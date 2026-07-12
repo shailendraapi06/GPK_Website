@@ -10,7 +10,7 @@ export const contactItems = [
   {
     id: "address",
     label: "Address",
-    value: "Government Polytechnic Kanpur, Kanpur, Uttar Pradesh, India",
+    value: "GT Road, Near Gurudev Palace, Vikas Nagar, Kanpur(U.P.) - 208002",
     icon: "address"
   },
   {
@@ -22,13 +22,13 @@ export const contactItems = [
   {
     id: "email",
     label: "Email",
-    value: "info@gpk.example",
+    value: "newprincipalgpknp18@gmail.com",
     icon: "email"
   },
   {
     id: "hours",
     label: "Office Hours",
-    value: "Monday to Saturday, 9:00 AM to 5:00 PM",
+    value: "Monday to Saturday, 10:00 AM to 5:00 PM",
     icon: "hours"
   }
 ];

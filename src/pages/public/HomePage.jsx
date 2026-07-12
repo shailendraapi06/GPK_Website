@@ -8,8 +8,7 @@ import {
   NotificationBar,
   PlacementSection,
   PrincipalSection,
-  QuickLinksSection,
-  WhyChooseSection
+  QuickLinksSection
 } from "../../components/home";
 
 export function HomePage() {
@@ -21,7 +20,6 @@ export function HomePage() {
       <QuickLinksSection />
       <LatestNoticesSection />
       <DepartmentSection />
-      <WhyChooseSection />
       <PlacementSection />
       <PrincipalSection />
       <GallerySection />

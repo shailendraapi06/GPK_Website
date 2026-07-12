@@ -1,6 +1,6 @@
-import heroFrontImage from "../../assets/home/hero-front.jfif";
-import heroAuditoriumImage from "../../assets/home/hero-auditorium.jpg";
-import heroTeachersImage from "../../assets/home/hero-teachers.jpeg";
+import heroCampus1Image from "../../assets/home/hero-campus-1.jpg";
+import heroCampus2Image from "../../assets/home/hero-campus-2.jfif";
+import heroCampus3Image from "../../assets/home/hero-campus-3.jpeg";
 
 export const heroContent = {
   title: "Government Polytechnic Kanpur",
@@ -12,24 +12,24 @@ export const heroContent = {
   ],
   badges: [
     { label: "AICTE Approved" },
-    { label: "Government Institute" },
-    { label: "Placements" },
-    { label: "Skilled Faculty" }
+    { label: "Affiliated to BTEUP" },
+    // { label: "Placements" },
+    { label: "Government Institute" }
   ],
   slides: [
     {
-      id: "campus-front",
-      src: heroFrontImage,
+      id: "hero-campus-2",
+      src: heroCampus2Image,
       alt: "Front view of Government Polytechnic Kanpur campus"
     },
     {
-      id: "campus-auditorium",
-      src: heroAuditoriumImage,
+      id: "hero-campus-1",
+      src: heroCampus1Image,
       alt: "Auditorium gathering at Government Polytechnic Kanpur"
     },
     {
-      id: "campus-teachers",
-      src: heroTeachersImage,
+      id: "hero-campus-3",
+      src: heroCampus3Image,
       alt: "Faculty group at Government Polytechnic Kanpur"
     }
   ]

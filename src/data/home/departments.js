@@ -9,7 +9,7 @@ export const departmentsSectionContent = {
 export const departments = [
   {
     id: "computer-science",
-    name: "Computer Science Engineering",
+    name: "Information Technology ",
     description:
       "Focused on software fundamentals, problem solving, and industry-relevant digital skills.",
     to: "/departments",
