@@ -1,5 +1,14 @@
-import { HomeSectionShell } from "./HomeSectionShell";
+import { latestNotices, noticesSectionContent } from "../../data/home/notices";
+import { Container } from "../layout/Container";
+import { Section } from "../../layouts/Section";
+import { NoticeBoard } from "./NoticeBoard";
 
 export function LatestNoticesSection() {
-  return <HomeSectionShell title="Latest Notices" sectionId="latest-notices" />;
+  return (
+    <Section className="home-section notices-section" aria-labelledby="latest-notices-title">
+      <Container>
+        <NoticeBoard {...noticesSectionContent} notices={latestNotices.slice(0, 3)} />
+      </Container>
+    </Section>
+  );
 }
