@@ -1,14 +1,14 @@
 import {
-  AdmissionHighlightsSection,
   ContactPreviewSection,
   DepartmentSection,
   GalleryPreviewSection,
   HeroSection,
   LatestNoticesSection,
   NewsEventsSection,
-  PlacementHighlightsSection,
+  PlacementSection,
   PrincipalMessageSection,
-  QuickLinksSection
+  QuickLinksSection,
+  WhyChooseSection
 } from "../../components/home";
 
 export function HomePage() {
@@ -18,8 +18,8 @@ export function HomePage() {
       <QuickLinksSection />
       <LatestNoticesSection />
       <DepartmentSection />
-      <AdmissionHighlightsSection />
-      <PlacementHighlightsSection />
+      <WhyChooseSection />
+      <PlacementSection />
       <PrincipalMessageSection />
       <NewsEventsSection />
       <GalleryPreviewSection />
