@@ -1,13 +1,18 @@
 import { useEffect, useId, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import collegeLogo from "../../assets/branding/logo.png";
 import { publicNavigationItems } from "../../data/navigation";
 import { PageContainer } from "../../layouts/PageContainer";
 
 function CollegeBrand() {
   return (
     <NavLink className="navbar__brand" to="/" aria-label="Government Polytechnic Kanpur home">
-      <span className="navbar__brand-mark" aria-hidden="true">
-        GPK
+      <span className="navbar__brand-mark">
+        <img
+          className="navbar__brand-logo"
+          src={collegeLogo}
+          alt="Government Polytechnic Kanpur logo"
+        />
       </span>
       <span className="navbar__brand-text">
         <span className="navbar__brand-title">Government Polytechnic Kanpur</span>

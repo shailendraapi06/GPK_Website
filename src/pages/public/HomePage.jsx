@@ -1,12 +1,13 @@
 import {
-  ContactPreviewSection,
+  ContactSection,
   DepartmentSection,
-  GalleryPreviewSection,
+  GallerySection,
   HeroSection,
+  LeadershipSection,
   LatestNoticesSection,
-  NewsEventsSection,
+  NotificationBar,
   PlacementSection,
-  PrincipalMessageSection,
+  PrincipalSection,
   QuickLinksSection,
   WhyChooseSection
 } from "../../components/home";
@@ -15,15 +16,16 @@ export function HomePage() {
   return (
     <>
       <HeroSection />
+      <NotificationBar />
+      <LeadershipSection />
       <QuickLinksSection />
       <LatestNoticesSection />
       <DepartmentSection />
       <WhyChooseSection />
       <PlacementSection />
-      <PrincipalMessageSection />
-      <NewsEventsSection />
-      <GalleryPreviewSection />
-      <ContactPreviewSection />
+      <PrincipalSection />
+      <GallerySection />
+      <ContactSection />
     </>
   );
 }

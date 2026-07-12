@@ -1,6 +1,6 @@
-import heroCampusOne from "../../assets/home/hero-campus-1.svg";
-import heroCampusTwo from "../../assets/home/hero-campus-2.svg";
-import heroCampusThree from "../../assets/home/hero-campus-3.svg";
+import heroFrontImage from "../../assets/home/hero-front.jfif";
+import heroAuditoriumImage from "../../assets/home/hero-auditorium.jpg";
+import heroTeachersImage from "../../assets/home/hero-teachers.jpeg";
 
 export const heroContent = {
   title: "Government Polytechnic Kanpur",
@@ -17,8 +17,20 @@ export const heroContent = {
     { label: "Skilled Faculty" }
   ],
   slides: [
-    { id: "campus-1", src: heroCampusOne, alt: "Illustrated academic block placeholder" },
-    { id: "campus-2", src: heroCampusTwo, alt: "Illustrated institutional building placeholder" },
-    { id: "campus-3", src: heroCampusThree, alt: "Illustrated college campus facade placeholder" }
+    {
+      id: "campus-front",
+      src: heroFrontImage,
+      alt: "Front view of Government Polytechnic Kanpur campus"
+    },
+    {
+      id: "campus-auditorium",
+      src: heroAuditoriumImage,
+      alt: "Auditorium gathering at Government Polytechnic Kanpur"
+    },
+    {
+      id: "campus-teachers",
+      src: heroTeachersImage,
+      alt: "Faculty group at Government Polytechnic Kanpur"
+    }
   ]
 };
