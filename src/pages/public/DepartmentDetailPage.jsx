@@ -1,13 +1,22 @@
 import { useMemo } from "react";
 import { useParams } from "react-router-dom";
-import { departments } from "../../data/departments";
 import { Container } from "../../components/layout/Container";
+import {
+  CurriculumSection,
+  DepartmentAboutSection,
+  DepartmentGallerySection,
+  DepartmentHeaderSection,
+  FacultySection,
+  HodMessageSection,
+  PlacementSection
+} from "../../components/departments";
+import { getDepartmentBySlug } from "../../data/departments";
 import { Section } from "../../layouts/Section";
 
 export function DepartmentDetailPage() {
   const { slug } = useParams();
   const department = useMemo(
-    () => departments.find((item) => item.slug === slug),
+    () => getDepartmentBySlug(slug),
     [slug]
   );
 
@@ -31,18 +40,14 @@ export function DepartmentDetailPage() {
   return (
     <Section className="department-detail-page" aria-labelledby="department-detail-title">
       <Container>
-        <div className="department-detail-page__shell surface">
-          <p className="department-detail-page__eyebrow">Department Overview</p>
-          <h1 id="department-detail-title" className="department-detail-page__title">
-            {department.name}
-          </h1>
-          <p className="department-detail-page__intro">{department.description}</p>
-          <p className="department-detail-page__hod">
-            <span>Head of Department:</span> {department.hodName}
-          </p>
-          <p className="department-detail-page__note">
-            Detailed department content can be connected here later through the backend or admin panel.
-          </p>
+        <div className="department-detail-page__shell">
+          <DepartmentHeaderSection department={department} />
+          <DepartmentAboutSection about={department.about} />
+          <HodMessageSection hod={department.hod} />
+          <FacultySection faculty={department.faculty} />
+          <CurriculumSection curriculum={department.curriculum} />
+          <PlacementSection placement={department.placement} />
+          <DepartmentGallerySection gallery={department.gallery} />
         </div>
       </Container>
     </Section>
