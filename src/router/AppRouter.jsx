@@ -7,6 +7,7 @@ import {
   AcademicsPage,
   AdmissionsPage,
   ContactPage,
+  DepartmentDetailPage,
   DepartmentsPage,
   FacultyPage,
   GalleryPage,
@@ -25,6 +26,7 @@ export function AppRouter() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/admissions" element={<AdmissionsPage />} />
           <Route path="/departments" element={<DepartmentsPage />} />
+          <Route path="/departments/:slug" element={<DepartmentDetailPage />} />
           <Route path="/academics" element={<AcademicsPage />} />
           <Route path="/student-corner" element={<StudentCornerPage />} />
           <Route path="/faculty" element={<FacultyPage />} />
