@@ -6,10 +6,10 @@ export const quickLinks = [
     icon: "admission"
   },
   {
-    title: "Downloads",
-    description: "Forms, prospectus, notices, and important downloadable files.",
-    to: "/contact",
-    icon: "downloads"
+    title: "Campus Facilities",
+    description: "Explore key campus resources, labs, library, and student amenities.",
+    to: "/facilities",
+    icon: "facilities"
   },
   {
     title: "Scholarship",

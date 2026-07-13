@@ -9,6 +9,7 @@ import {
   DepartmentDetailPage,
   DepartmentsPage,
   FacultyPage,
+  FacilitiesPage,
   GalleryPage,
   HomePage,
   PlacementPage
@@ -26,6 +27,7 @@ export function AppRouter() {
           <Route path="/departments" element={<DepartmentsPage />} />
           <Route path="/departments/:slug" element={<DepartmentDetailPage />} />
           <Route path="/faculty" element={<FacultyPage />} />
+          <Route path="/facilities" element={<FacilitiesPage />} />
           <Route path="/placement" element={<PlacementPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />

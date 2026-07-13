@@ -69,6 +69,16 @@ const iconPaths = {
       strokeLinejoin="round"
     />
   ),
+  facilities: (
+    <path
+      d="M4.5 18.5H19.5M7 18.5V8.5L12 5.5L17 8.5V18.5M9 12H10M14 12H15M9 15H10M14 15H15M11 18.5V14H13V18.5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
   scholarship: (
     <path
       d="M12 4.5L19 8L12 11.5L5 8L12 4.5ZM7.5 10V14.5C7.5 16 9.5 17 12 17C14.5 17 16.5 16 16.5 14.5V10M18.5 9.5V14"

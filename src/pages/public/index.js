@@ -4,6 +4,7 @@ export { ContactPage } from "./ContactPage";
 export { DepartmentDetailPage } from "./DepartmentDetailPage";
 export { DepartmentsPage } from "./DepartmentsPage";
 export { FacultyPage } from "./FacultyPage";
+export { FacilitiesPage } from "./FacilitiesPage";
 export { GalleryPage } from "./GalleryPage";
 export { HomePage } from "./HomePage";
 export { PlacementPage } from "./PlacementPage";
