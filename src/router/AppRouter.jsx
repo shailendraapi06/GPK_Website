@@ -4,7 +4,6 @@ import { MainLayout } from "../layouts/MainLayout";
 import { AdminDashboardPage } from "../pages/admin/AdminDashboardPage";
 import {
   AboutPage,
-  AcademicsPage,
   AdmissionsPage,
   ContactPage,
   DepartmentDetailPage,
@@ -12,8 +11,7 @@ import {
   FacultyPage,
   GalleryPage,
   HomePage,
-  PlacementPage,
-  StudentCornerPage
+  PlacementPage
 } from "../pages/public";
 import { NotFoundPage } from "../pages/system/NotFoundPage";
 
@@ -27,8 +25,6 @@ export function AppRouter() {
           <Route path="/admissions" element={<AdmissionsPage />} />
           <Route path="/departments" element={<DepartmentsPage />} />
           <Route path="/departments/:slug" element={<DepartmentDetailPage />} />
-          <Route path="/academics" element={<AcademicsPage />} />
-          <Route path="/student-corner" element={<StudentCornerPage />} />
           <Route path="/faculty" element={<FacultyPage />} />
           <Route path="/placement" element={<PlacementPage />} />
           <Route path="/gallery" element={<GalleryPage />} />

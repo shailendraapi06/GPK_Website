@@ -69,6 +69,16 @@ const iconPaths = {
       strokeLinejoin="round"
     />
   ),
+  scholarship: (
+    <path
+      d="M12 4.5L19 8L12 11.5L5 8L12 4.5ZM7.5 10V14.5C7.5 16 9.5 17 12 17C14.5 17 16.5 16 16.5 14.5V10M18.5 9.5V14"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
   placement: (
     <path
       d="M4 18H20M6 18V10M12 18V6M18 18V12M4 8L8.5 4L12.5 8L20 4"
@@ -85,7 +95,7 @@ export function QuickLinkIcon({ icon, title }) {
   return (
     <span className="quick-link-card__icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" role="img" aria-label={title}>
-        {iconPaths[icon] || iconPaths.notices}
+        {iconPaths[icon] || iconPaths.admission}
       </svg>
     </span>
   );

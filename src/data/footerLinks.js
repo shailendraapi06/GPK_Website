@@ -6,17 +6,17 @@ export const footerLinkGroups = [
       { label: "About", to: "/about" },
       { label: "Admissions", to: "/admissions" },
       { label: "Departments", to: "/departments" },
-      { label: "Academics", to: "/academics" }
+      { label: "Faculty", to: "/faculty" }
     ]
   },
   {
     title: "Student Links",
     links: [
-      { label: "Student Corner", to: "/student-corner" },
-      { label: "Faculty", to: "/faculty" },
       { label: "Placement", to: "/placement" },
       { label: "Gallery", to: "/gallery" },
-      { label: "Contact", to: "/contact" }
+      { label: "Contact", to: "/contact" },
+      { label: "Downloads", to: "/contact" },
+      { label: "Scholarship", to: "/admissions" }
     ]
   }
 ];
