@@ -1,2 +1,1 @@
-// Export future controller modules from this file.
-export {};
+export { getHealth } from "./healthController.js";

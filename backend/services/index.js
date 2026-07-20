@@ -1,2 +1,1 @@
-// Export future service modules from this file.
-export {};
+export { getHealthStatus } from "./healthService.js";

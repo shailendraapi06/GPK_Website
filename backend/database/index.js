@@ -1,2 +1,1 @@
-// Export future database helpers from this file.
-export {};
+export { connectDatabase } from "./mongodb.js";

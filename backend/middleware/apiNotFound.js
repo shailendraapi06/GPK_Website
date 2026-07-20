@@ -1,7 +1,7 @@
 import { API_MESSAGES, HTTP_STATUS } from "../constants/index.js";
 import { createHttpError } from "../utils/index.js";
 
-export function notFound(request, _response, next) {
+export function apiNotFound(request, _response, next) {
   next(
     createHttpError(
       HTTP_STATUS.NOT_FOUND,

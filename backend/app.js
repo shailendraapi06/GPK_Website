@@ -2,11 +2,11 @@ import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
-import { corsOptions } from "./config/corsOptions.js";
-import { env } from "./config/env.js";
-import { errorHandler } from "./middleware/errorHandler.js";
-import { notFound } from "./middleware/notFound.js";
+import { corsOptions, env } from "./config/index.js";
+import { API_MESSAGES, HTTP_STATUS } from "./constants/index.js";
+import { errorHandler, notFound } from "./middleware/index.js";
 import { apiV1Router } from "./routes/index.js";
+import { sendSuccessResponse } from "./utils/index.js";
 
 const app = express();
 
@@ -17,9 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (_request, response) => {
-  response.status(200).json({
-    success: true,
-    message: "Government Polytechnic Kanpur backend foundation is active."
+  return sendSuccessResponse(response, {
+    statusCode: HTTP_STATUS.OK,
+    message: API_MESSAGES.BACKEND_ACTIVE
   });
 });
 

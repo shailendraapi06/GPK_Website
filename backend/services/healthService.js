@@ -1,6 +1,7 @@
+import { API_MESSAGES } from "../constants/index.js";
+
 export function getHealthStatus() {
   return {
-    success: true,
-    message: "Backend is running successfully."
+    message: API_MESSAGES.BACKEND_HEALTHY
   };
 }
