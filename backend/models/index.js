@@ -1,2 +1,10 @@
-// Export future Mongoose models from this file.
-export {};
+export { Admin } from "./Admin.js";
+export { ContactMessage } from "./ContactMessage.js";
+export { Department } from "./Department.js";
+export { Faculty } from "./Faculty.js";
+export { Gallery } from "./Gallery.js";
+export { Hero } from "./Hero.js";
+export { Leadership } from "./Leadership.js";
+export { Notification } from "./Notification.js";
+export { Placement } from "./Placement.js";
+export { WebsiteSettings } from "./WebsiteSettings.js";
