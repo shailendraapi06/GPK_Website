@@ -104,6 +104,10 @@ export function Footer() {
         <div className="footer__bottom">
           <p className="footer__copyright">
             © {currentYear} Government Polytechnic Kanpur. All rights reserved.
+            {" | "}
+            <NavLink to="/admin" style={{ textDecoration: "underline", color: "var(--color-accent-300)", marginLeft: "0.5rem" }}>
+              Admin Portal Login
+            </NavLink>
           </p>
         </div>
       </PageContainer>
